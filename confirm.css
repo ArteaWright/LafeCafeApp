@@ -1,0 +1,18 @@
+body {
+    background-color: #cbd4cf;
+}
+#confirmation {
+    margin:  100px auto;
+    width: 400px;
+    height: 250px;
+    background: #d0ebdcdc;
+    border: 8px solid #e6f7eddc;
+    color:#3b5848;
+    font-weight: bold;
+    font-size: 22px;
+}
+#confirmation p {
+    position: relative;
+    top:40%;
+    text-align: center;
+}

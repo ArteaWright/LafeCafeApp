@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Lafe Café</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header id="container_header">
+    <a href="/" title="Home" id="logo">
+        <img src="/images/logo.png" alt="Lafe Café">
+    </a>
+        </header>
+
+    <section id="container_content" class="content-block">
+    <h1>A clean and clear start to your day!</h1>
+    <p> Start each day with a fresh cup of coffee from Lafe Café.<br> A fun casual fictional coffee shop.</p>
+    </section>
+
+    <section id="container_reserve" class="content-block">
+        <p>Skip the wait and schedule your order online!</p>
+
+    <form>
+    <label for="name">Name</label>   
+    <input type="text" id="name" placeholder="Joana Flower" required>
+
+    <label for="name">Email</label>   
+    <input type="email" id="Email" placeholder="Joanaflower@gmail.com" required>
+
+    <label for="coffee">Select your order:</label>
+    <select name="coffee" id="coffee" required>
+        <option value="none"></option>
+        <option value="Espresso">Espresso</option>
+        <option value="Cappuccino">Cappuccino</option>
+        <option value="Frappuccinos">Caramel Frappuccino</option>
+        <option value="Cold Brew">Vanilla Cold Brew</option>
+    </select>
+
+    <label for="coffee">Select your size:</label>
+    <select name="size" id="size" required>
+        <option value="none"></option>
+        <option value="Short">Short</option>
+        <option value="Tall">Tall</option>
+        <option value="Grande">Grande</option>
+    </select>
+
+    <label for="name">Pick Up Date</label>   
+    <input type="date" id="date" required>
+
+    <label for="time">Pick Up Time</label>   
+    <input type="time" id="time" required>
+
+    <button id="button" onclick="window.location.href='confirm.html'">Order</button>
+    </form>
+   
+    </section>
+
+        <footer id="container_footer" class="content-block">
+         &copy Copyright 2020 Lafe Café
+
+        </footer>
+    </div>
+</body>
+</html>
