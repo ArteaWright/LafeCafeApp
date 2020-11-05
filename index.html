@@ -23,12 +23,12 @@
     <section id="container_reserve" class="content-block">
         <p>Skip the wait and schedule your order online!</p>
 
-    <form name="myform">
+    <form id="myform">
     <label for="name">Name</label>   
-    <input type="text" name="flname" placeholder="Joana Flower" required>
+    <input type="text" id="flname" placeholder="Joana Flower" required>
 
     <label for="name">Email</label>   
-    <input type="email" name="email" placeholder="Joanaflower@gmail.com" required>
+    <input type="email" id="email" placeholder="Joanaflower@gmail.com" required>
 
     <label for="coffee">Select your order:</label>
     <select name="coffee" id="coffee" required>
@@ -48,10 +48,10 @@
     </select>
 
     <label for="name">Pick Up Date</label>   
-    <input type="date" name="date" required>
+    <input type="date" id="date" required>
 
     <label for="time">Pick Up Time</label>   
-    <input type="time" name="time" required>
+    <input type="time" id="time" required>
 
     <button id="button" onclick="order()">Order</button>
     

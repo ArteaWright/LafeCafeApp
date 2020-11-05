@@ -1,16 +1,17 @@
 function order() {
-    const u = document.forms["myform"]['flname'].value;
-    const v = document.forms["myform"]['email'].value;
-    const w = document.forms["myform"]['date'].value;
-    const x = document.forms["myform"]['time'].value;
-    const y = document.getElementById('coffee').selectedIndex;
-    const z = document.getElementsByTagName('option')[y][t].value;
-    const s = document.getElementById('size').selectedIndex;
-    if (u, v, w, x, z === "") {
-        alert("please fill");
-    }
-    else {
-        const confrm = document.getElementById('confirmation').style.display= 'block';
-        const buttn = document.getElementById('button').style.display = 'none';
-    }
+let u = document.forms["myform"]["flname"].value;
+let v = document.forms["myform"]["email"].value;
+let y = document.getElementById("coffee").selectedIndex;
+let z = document.getElementsByTagName("option")[y].value;
+let s = document.getElementById("size").selectedIndex;
+let t = document.getElementsByTagName("option")[s].value;
+let w = document.forms["myform"]["date"].value;
+let x = document.forms["myform"]["time"].value;
+if (u, v, z, t, w, x === "") {
+    alert("please fill");
+} 
+else {
+    document.getElementById("confirmation").style.display = "block";
+    document.getElementById("button").style.display = "none";
+}
 }
