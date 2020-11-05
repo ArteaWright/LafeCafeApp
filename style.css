@@ -100,6 +100,21 @@ form select:focus{
     background: #3b5848;
     color: white;
 }
+#confirmation {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: auto 0;    
+    background: #99c0a98c;
+    border: 1px solid #99c0a98c;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    display: none;
+}
+#confirmation p {
+    margin-top: 5px 0;
+}
 #container_footer {
     background: none;
     color: white;

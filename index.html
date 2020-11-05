@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <link rel="stylesheet" href="style.css">
     <title>Lafe Café</title>
-    <script src="index.js"></script>
 </head>
 <body>
     <div id="container">
@@ -24,45 +23,48 @@
     <section id="container_reserve" class="content-block">
         <p>Skip the wait and schedule your order online!</p>
 
-    <form>
+    <form name="myform">
     <label for="name">Name</label>   
-    <input type="text" id="name" placeholder="Joana Flower" required>
+    <input type="text" name="flname" placeholder="Joana Flower" required>
 
     <label for="name">Email</label>   
-    <input type="email" id="Email" placeholder="Joanaflower@gmail.com" required>
+    <input type="email" name="email" placeholder="Joanaflower@gmail.com" required>
 
     <label for="coffee">Select your order:</label>
     <select name="coffee" id="coffee" required>
-        <option value="none"></option>
-        <option value="Espresso">Espresso</option>
-        <option value="Cappuccino">Cappuccino</option>
-        <option value="Frappuccinos">Caramel Frappuccino</option>
-        <option value="Cold Brew">Vanilla Cold Brew</option>
+        <option class="option" value=""></option>
+        <option class="opton" value="Espresso">Espresso</option>
+        <option class="opton" value="Cappuccino">Cappuccino</option>
+        <option class="opton" value="Frappuccinos">Caramel Frappuccino</option>
+        <option class="opton" value="Cold Brew">Vanilla Cold Brew</option>
     </select>
 
     <label for="coffee">Select your size:</label>
     <select name="size" id="size" required>
-        <option value="none"></option>
+        <option value=""></option>
         <option value="Short">Short</option>
         <option value="Tall">Tall</option>
         <option value="Grande">Grande</option>
     </select>
 
     <label for="name">Pick Up Date</label>   
-    <input type="date" id="date" required>
+    <input type="date" name="date" required>
 
     <label for="time">Pick Up Time</label>   
-    <input type="time" id="time" required>
+    <input type="time" name="time" required>
 
-    <button id="button" onclick="window.location.href='confirm.html'">Order</button>
+    <button id="button" onclick="order()">Order</button>
+    
+    <div id="confirmation">
+        <p>√ Your Order has been received.Thank You for ordering. See you soon!</p>
+     </div>
     </form>
-   
-    </section>
-
+     </section>
         <footer id="container_footer" class="content-block">
          &copy Copyright 2020 Lafe Café
-
         </footer>
     </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
