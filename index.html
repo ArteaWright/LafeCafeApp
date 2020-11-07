@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Lafe Café, coffee, coffe shop, brazil coffee, restraunts, cafe, cappuccino, latte, macchito, mocha, expresso">
+    <meta name="author" content="Artea Wright">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Lafe Café</title>
 </head>
 <body>
-<nav>
+
+<!-- <nav>
    
 <div class="topnav">
           <a href="#home" class="active"></a>
@@ -18,7 +21,7 @@
             <a href="#about">About</a>
           </div>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z"/></svg>
           </a>
 </div>
 <div class="phoneicon">
@@ -27,18 +30,33 @@
 <img class="phoneicon_icon" src="/images/smartphone-charger.svg">
 
 </div>
-</nav>
+</nav> -->
+
+<main>
+<h1>A clean brew to kick start<br>each day!</h1>
+<img class="logo" src="/images/logo.png">
+
+<section class="loginpage">
+
+<form id="loginpage_inputs" onsubmit=" return validate();">
+<label for="username"></label>
+<input type="text" id="username" placeholder="username or email" minlength="8" maxlength="25">
+
+<label for="password" ></label>
+<input type="text" id="password" placeholder="password" minlength="8" maxlength="16">
+
+<button type="submit" class="button top" onclick="window.location.href=/pages/product.html">Sign In</button>
+</form>
+<br>
+<button type="button" class="button bottom">Sign Up</button>
+</section>
 
 
 
 
 
 
-
-
-
-
-
-   <script src="script.js"></script>
+</main>
+   <script src="/scripts/script.js"></script>
 </body>
 </html>
